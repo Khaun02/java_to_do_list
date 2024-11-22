@@ -1,10 +1,18 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        Node<String> task1 = new Node<String>("Creation of LinkedList.java");
-        Node<String> task2 = new Node<String>("More methods in Node.java");
+        LinkedList toDoList = new LinkedList();
 
-        task1.setNext(task2);
-        System.out.println("Task 1: " + task1.getData());
-        System.out.println("Task 2: " + task1.getNext().getData());
+        System.out.println("Welcome to To-Do List Manager!\n" + //
+                        "1. Add Task\n" + //
+                        "2. Remove Task\n" + //
+                        "3. View Tasks\n" + //
+                        "4. Update Task\n" + //
+                        "5. Mark Task as Completed\n" + //
+                        "6. Sort Tasks by Priority\n" + //
+                        "7. Exit\n" + //
+                        "Enter your choice:");
     }
+
 }

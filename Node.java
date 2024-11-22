@@ -6,11 +6,13 @@
 public class Node<T> {
 
     private T data; // any data type
+    private T priority; // setting the priority of the task
     private Node<T> next; // the node next to it
 
     // constructor
-    public Node(T data) {
+    public Node(T data, T priority) {
         this.data = data;
+        this.priority = priority;
         this.next = null;
     }
 
